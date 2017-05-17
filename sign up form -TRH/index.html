@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form action="/config.php" method="post">
+        <h1>Sign Up</h1>
+        
+    <fieldset> 
+        
+        <legend><span class="number">1</span>Your basic info</legend>
+        
+        <label for="name">Name:</label>    
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email"   
+    
+    </fieldset>  
+    
+    <fieldset>
+        
+        <legend><span class="number">2</span>About Your Ticket</legend>
+        
+        <label for="message">What happen</label>    
+        <textarea type="textarea" id="message"></textarea>
+        
+        <label for="ticket">Ticket Violation</label>
+        <select id="ticket" name="user_ticket">
+        <optgroup label="Infraction">
+            <option value="speeding">Speeding</option>
+            <option value="redlight">Red Light</option>
+            <option value="sign">Sign Violation</option>
+        </optgroup>
+        <optgroup lable="Misdemenaor">
+            <option value="DUI">DUI</option>
+            <option value="license_suspended">Drivier's License Suspended</option>
+            <option value="reckless_driving">Reckless Driving</option>
+        </optgroup>
+        </select>
+        
+    <button type="submit">Sign Up</button>  
+    </form>   
+        
+  </body>
+</html>
